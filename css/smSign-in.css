@@ -1,0 +1,181 @@
+#header{
+    height: 113px;
+}
+/* 左边文字 */
+#header .top{
+    height: 28px;
+    line-height: 28px;
+    background-color: #101010;
+}
+/* 右边文字 */
+#header .top span{
+    color: #e6e6e6;
+    font-size: 18px;
+    text-align: center;
+}
+#header .top .logintxtbox{
+    color: #bfbfbf;
+}
+#header .top .logintxtbox a{
+    color: #f60;
+}
+/* 欢迎登陆 */
+#header .welcome{
+    text-indent:24px;
+}
+
+/* 扫码登录 */
+#main{
+    height: 500px;
+    background:url(../img/0loginB.jpg);
+}
+#main .conten{
+    height: 500px;
+}
+#main .Sign-in{
+    height: 370px;
+    width: 370px;
+    background-color: #fff;
+    margin-top: 64px;
+    margin-right: 66px;
+}
+/* 标题 */
+#main .sig{
+    /* display: none; */
+}
+#main .Sign-in .topp>p{
+    height: 24px;
+    line-height: 18px;
+    width: 184px;
+    color: #666666;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 22px;
+    border-bottom: 1px solid #E6E6E6;
+}
+#main .Sign-in .topp .cur{
+    color: #ff6600;
+}
+#main .Sign-in div:first{
+    height: 55px;
+    border-bottom:2px solid #f6f6f6;
+}
+#main .Sign-in div p:first-of-type{
+    border-right: 2px solid #f6f6f6;
+}
+/* 二维码 */
+#main .QR-code{
+    height: 260px;
+    position: relative;
+}
+#main .QR-code .ewm{
+    position: absolute;
+    top: 54px;
+    left: 108px;
+}
+#main .QR-code .tel{
+    position: absolute;
+    top: 34px;
+    right: 0;
+    display: none;
+}
+#main .text{
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+/* 账号登录界面 */
+#main .account{
+    display: none;
+}
+#main .account form{
+    padding-left: 40px;
+    height: 190px;
+}
+#main .account form div{
+    text-align: center;
+    height: 36px;
+    width: 284px;
+}
+#main .account form input{
+    border: 2px solid #D4D4D4;
+    height: 34px;
+    width: 284px;
+    font-size: 20px;
+}
+
+#main .account form .cxk{
+    width: 12px;
+    height: 12px;
+}
+#main .account form div span{
+    line-height:48px;
+}
+#main .account form div span:first-of-type{
+    text-indent: 6px;
+}
+#main .account form .smt{
+    color: #fff;
+    background-color: #FF6700;
+    border: none;
+    cursor: pointer;
+}
+#main .account div .botp{
+    height: 48px;
+    line-height: 48px;
+    font-size: 20px;
+    text-align: center;
+    border-top: 3px solid #E6E6E6;
+}
+#main .account div .botp a{
+    color: #FF6700;
+}
+#main .account div{
+    position: relative;
+}
+#main .account .portrait{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#main .account .txt{
+    margin-left: 38px;
+    width: 246px;
+    border-left: 0;
+}
+#main .account .lock{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#main .account .psd{
+    margin-left: 38px;
+    width: 246px;
+    border-left: 0;
+}
+#username-error{
+    position: absolute;
+    top: 9px;
+    right: 0;
+    font-size: 18px;
+    color: red;
+}
+#pwd-error{
+    position: absolute;
+    top: 9px;
+    right: 0;
+    font-size: 18px;
+    color: red;
+}
+/* 页脚 */
+footer p:first-child{
+    text-align: center;
+	height: 15px;
+	font-size: 14px;
+}
+footer p:last-child{
+    font-size: 14px;
+    text-align: center;
+    height: 14px;
+}

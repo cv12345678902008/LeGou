@@ -1,0 +1,418 @@
+/* 头部样式 */
+#header{
+    height: 114px;
+}
+/* 左边文字 */
+#header .top{
+    height: 28px;
+    line-height: 28px;
+    background-color: #101010;
+}
+/* 右边文字 */
+#header .top span{
+    color: #e6e6e6;
+    font-size: 18px;
+    text-align: center;
+}
+#header .top .logintxtbox{
+    color: #bfbfbf;
+}
+#header .top .logintxtbox a{
+    color: #f60;
+}
+/* 第二层 */
+#header .searchbnox{
+    margin-top: 6px;
+    height: 44px;
+}
+/* 搜索框 */
+#header .searchbnox form{
+    width: 440px;
+	height: 36px;
+	background-color: #ffffff;
+    border: solid 2px #ff6600;
+    box-sizing: border-box;
+    margin-right: 38px;
+}
+#header .searchbnox form input:first-child{
+    width: 388px;
+    height: 32px;
+}
+#header .searchbnox form input:last-child{
+    width: 48px;
+    height: 34px;
+    background: url(../img/bgicon.png);
+}
+/* 购物车和订单 */
+#header .searchbnox .rbox a{
+    width: 100px;
+    line-height: 36px;
+    font-size: 16px
+}
+#header .searchbnox .rbox .order{
+    color: #808080;
+    background-color: #ebebeb;
+    text-align: center;
+}
+#header .searchbnox .rbox .shopping-cart{
+    color: #fff;
+    background-color: #ff6600;
+    font-size: 14px;
+    text-indent: 37px;
+    background: url(../img/bgicon.png) no-repeat 0px -42px #ff6600;
+}
+/* 导航栏 */
+#header nav .list{
+    margin-top: 14px;
+}
+#header nav .list li:first-child{
+    margin-left:38px;
+}
+#header nav .list li{
+    margin: 0 16px;
+    float: left;
+    font-size: 16px;
+    font-weight: bolder;
+}
+#header nav .list li a{
+    color: #000;
+}
+
+/* banner */
+ .ebookright{
+    width: 196px;
+    height: 446px;
+    border: solid 2px #e5e5e5;
+}
+ .ebookright h5{
+    font-size: 24px;
+    text-align: center;
+    margin: 7px 0;
+    line-height: 38px;
+    color: #808080;
+}
+ .ebookright .Ranking-List{
+    padding-left: 22px;
+}
+ .ebookright .Ranking-List li{
+    line-height: 36px;
+    border-bottom: 1px solid #e6e6e6;
+    color: #4d4d4d;
+    position: relative;
+}
+ .ebookright .Ranking-List li:last-child{
+    border-bottom: 0;
+}
+ .ebookright .Ranking-List li div p{
+    line-height: 19px;
+    font-size: 14px;
+    color: #404040;
+}
+ .ebookright .Ranking-List li .first-p{
+    display: none;
+    line-height: 36px;
+}
+ .ebookright .Ranking-List li span{
+    position: absolute;
+    left: -14px;
+    top: 0;
+}
+ .ebookright .Ranking-List li div{
+    display: none;
+}
+ .ebookright .Ranking-List li .firstbox{
+    display: block;
+}
+
+/* 折扣区 */
+#Discount .title span{
+    display: block;
+    width: 220px;
+	height: 47px;
+    font-size: 24px;
+    background-color: #f60;
+}
+#Discount ul li{
+    width: 210px;
+    height: 258px;
+    float: left;
+    font-size: 14px;
+}
+#Discount ul li p span{
+    display: block;
+    float: left;
+}
+#Discount ul li .orpr{
+    color: #c0c0c0;
+    text-decoration: line-through;
+    display: none;
+}
+
+/* 新书上架 */
+#newbooks{
+    height: 546px;
+}
+#newbooks .book-title{
+    width: 908px;
+    color: #333333;
+}
+#newbooks .book-title a{
+    float: right;
+    width: 98px;
+    height: 34px;
+    font-size: 18px;
+    border: none;
+    color: #333333;
+    text-align: center;
+}
+#newbooks .book-title .avtion{
+    background-color: #ff6600;
+    color: #fff;
+}
+
+/* 左边内容 */
+#newbooks .ebookleft{
+    width: 904px;
+	height: 500px;
+	border: solid 2px #e6e6e6;
+}
+#newbooks .ebookleft ul li{
+    width: 160px;
+    height: 220px;
+    float: left;
+    margin-left: 9px;
+    margin-top: 22px;
+    padding-left: 10px;
+}
+#newbooks .ebookleft ul li p{
+    font-size: 14px;
+}
+#newbooks .ebookleft ul li p span{
+    display: block;
+}
+
+
+/* 右边内容 */
+#newbooks .ebookright{
+    width: 284px;
+    height: 500px;
+    border: solid 2px #e5e5e5;
+}
+#newbooks .ebookright h5{
+    font-size: 24px;
+    text-align: center;
+    margin: 7px 0;
+    line-height: 38px;
+    color: #808080;
+}
+#newbooks .ebookright .Ranking-List{
+    padding-left: 22px;
+}
+#newbooks .ebookright .Ranking-List li{
+    line-height: 42px;
+    border-bottom: 1px solid #e6e6e6;
+    color: #4d4d4d;
+    position: relative;
+    font-size: 16px;
+}
+#newbooks .ebookright .Ranking-List li:last-child{
+    border-bottom: 0;
+}
+#newbooks .ebookright .Ranking-List li div p{
+    line-height: 19px;
+    font-size: 14px;
+    color: #404040;
+}
+#newbooks .ebookright .Ranking-List li .first-p{
+    display: none;
+    line-height: 36px;
+}
+#newbooks .ebookright .Ranking-List li span{
+    position: absolute;
+    left: -14px;
+    top: 0;
+}
+#newbooks .ebookright .Ranking-List li div{
+    display: none;
+}
+#newbooks .ebookright .Ranking-List li .firstbox{
+    display: block;
+}
+
+/* 独家 */
+#sole{
+    height: 578px;
+}
+#sole .book-title{
+    color: #333333;
+}
+#sole .book-title a{
+    float: right;
+    width: 98px;
+    height: 34px;
+    font-size: 18px;
+    border: none;
+    color: #333333;
+    text-align: center;
+}
+#sole .book-title .avtion{
+    background-color: #ff6600;
+    color: #fff;
+}
+
+
+/* 下面内容 */
+#sole .ebookleft{
+	height: 500px;
+	border-bottom: solid 2px #e6e6e6;
+}
+#sole .ebookleft ul li{
+    width: 160px;
+    height: 220px;
+    float: left;
+    margin-left: 25px;
+    margin-top: 22px;
+    padding-left: 10px;
+}
+#sole .ebookleft ul li p{
+    font-size: 14px;
+}
+#sole .ebookleft ul li p span{
+    display: block;
+}
+#sole .pptbox1{
+    width: 1200px !important;
+    height: 578px !important;
+    position: relative;
+    overflow: hidden;
+    display: none;
+}
+
+#sole .pptbox1 .innerwrapper{
+    width:7200px !important;/*当增加了li之后，大盒子的宽度也要相应的增加 这里增加了两个li，每个400，所以ul 从原来的1600变成了2400*/
+    height: 578px;
+    list-style: none;
+    position: absolute;
+    left: -400px;
+}
+#sole .pptbox1 .innerwrapper .uls{
+    width: 1200px;
+    height: 578px;
+}
+#sole .pptbox1 .innerwrapper .lis{
+    width: 1200px !important;
+    height: 578px !important;
+    float: left !important;
+}
+#sole .pptbox1 .innerwrapper .lis li{
+    width: 160px;
+    height: 220px;
+    float: left;
+    margin-left: 25px;
+    margin-top: 22px;
+    padding-left: 10px;
+}
+#sole .pptbox1 .innerwrapper .lis li img{
+    width: 150px !important;
+    height: 150px !important;
+}
+#sole .cur{
+    display: block;
+}
+
+/* 猜你喜欢 */
+#youlike{
+    height: 558px;
+    position: relative;
+}
+ .book-title{
+    color: #333333;
+}
+ .book-title img{
+    cursor: pointer;
+}
+ .book-title .avtion{
+    background-color: #ff6600;
+    color: #fff;
+}
+
+/* 下面内容 */
+#youlike .ebookleft{
+	height: 500px;
+    border-bottom: solid 2px #e6e6e6;
+    position: absolute;
+    display: none;
+}
+#youlike .cur{
+    display: block;
+}
+ .ebookleft ul li{
+    width: 160px;
+    height: 220px;
+    float: left;
+    margin-left: 25px;
+    margin-top: 22px;
+    padding-left: 10px;
+}
+ .ebookleft ul li p{
+    font-size: 14px;
+}
+ .ebookleft ul li p span{
+    display: block;
+}
+
+/* 页脚 */
+#footer{
+    margin-top: -34px;
+}
+#footer .trademark{
+    background-color: #f2f2f2;
+    height: 98px;
+}
+#footer .trademark  p{
+    width: 924px;
+    line-height: 98px;
+    margin: 0 auto;
+}
+#footer .trademark p>img{
+    margin-right: 96px;
+}
+#footer .footer-title{
+    margin: 0 auto;
+    width: 800px;
+    height: 160px;
+    position: relative;
+}
+#footer .footer-title ul{
+    margin-top: 40px;
+    margin-right:40px;
+    text-align: center;
+    color: #333333;
+}
+#footer .footer-title li{
+    font-size: 16px;
+}
+#footer .footer-title h4{
+    font-size: 18px;
+}
+#footer .footer-title .footerlogo{
+    position: absolute;
+    top: 50%;
+    margin-top:-40px;
+    right: -64px;
+}
+#footer .company{
+    width: 900px;
+    height: 16px;
+    margin: 0 auto;
+    margin-top: 42px;
+    color: #333333;
+}
+#footer .authentication{
+    width: 356px;
+    height: 14px;
+    color: #333333;
+    margin: 0 auto;
+    margin-top: 26px;
+    padding-bottom: 106px;
+}
