@@ -92,14 +92,12 @@
 #minute .main .commodity .cmleft{
     width: 342px;
     height: 474px;
-    background-color: blueviolet;
     margin-top: 12px;
     margin-left: 18px;
 }
 #minute .main .commodity .cmrigth{
     width: 762px;
     height: 474px;
-    background-color: paleturquoise;
     margin-top: 12px;
     margin-left: 18px;
 }
@@ -115,7 +113,60 @@
 #minute .main .commodity .slxz{
     width: 762px;
 }
+#minute .main .Quantity button{
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+#minute .main .Quantity .but{
+    width: 100px;
+	height: 34px;
+    border: solid 1px #c9c9c9;
+    margin-left: 6px;
+}
+#minute .main .Quantity .but2{
+    width: 100px;
+	height: 34px;
+    border: solid 2px #ff6600;
+    margin-left: 6px;
+}
+#minute .main .Quantity button span{
+    display: block;
+    width: 16px;
+	height: 14px;
+    background-color: #ff6600;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+#minute .main .Quantity button .cur2{
+    display: block;
+}
 
+#minute .main .jionshop{
+    width: 280px;
+}
+#minute .main .jionshop input[type=text]{
+    width: 42px;
+	height: 44px;
+    border: solid 1px #d9d9d9;
+    font-size: 28px;
+    color: #808080;
+    text-align: center;
+}
+#minute .main .jionshop input[type=submit]{
+    width: 190px;
+	height: 60px;
+	background-color: #ff6600;
+    border-radius: 2px;
+    font-size: 26px;
+    color: #fefefe;
+}
+#minute .main .jionshop p{
+    padding: 0;
+}
 
 
 /* 人气商品 */

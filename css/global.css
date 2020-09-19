@@ -56,6 +56,9 @@ input{
 .mt20{
     margin-top: 20px;
 }
+.mt22{
+    margin-top: 22px;
+}
 .mt24{
     margin-top: 24px;
 }
@@ -89,6 +92,9 @@ input{
 .mt52{
     margin-top: 52px;
 }
+.mt84{
+    margin-top: 84px;
+}
 .mt_110{
     margin-top: -110px;
 }
@@ -119,8 +125,26 @@ input{
 .ml24{
     margin-left: 24px;
 }
+.ml80{
+    margin-left: 80px;
+}
+.ml114{
+    margin-left: 114px;
+}
+.ml184{
+    margin-left: 184px;
+}
+.ml128{
+    margin-left: 128px;
+}
+.ml338{
+    margin-left: 338px;
+}
 .mr4{
     margin-right: 4px;
+}
+.mr10{
+    margin-right: 10px;
 }
 .mtr{
     margin: 0 15px;
@@ -136,6 +160,12 @@ input{
 }
 .pdl16{
     padding-left:16px;
+}
+.pdl24{
+    padding-left:24px;
+}
+.pdl28{
+    padding-left:28px;
 }
 .ptl0{
     padding-top:10px;
@@ -279,4 +309,29 @@ input{
     width: 6px;
      height: 21px;
      background-color: #f8380c;
+}
+
+.anniu{
+    width: 21px;
+	height: 21px;
+	background-color: #e5e5e5;
+    border: solid 1px #d9d9d9;
+    text-align: center;
+    line-height: 21px;
+    font-size: 24px;
+    padding: 0;
+    cursor: pointer;
+}
+.bord{
+    border: 1px solid #e5e5e5;
+}
+.sopspan{
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff6600;
+}
+.spspan{
+    font-size: 20px;
+    font-weight: bold;
+    color: #4d4d4d;
 }

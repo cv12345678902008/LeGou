@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="./css/reset.css">
     <!-- 引入公共样式 -->
     <link rel="stylesheet" href="./css/global.css">
+    <!-- 引入放大镜样式 -->
+    <link rel="stylesheet" href="./css/magnifier.css">
     <!-- 引入当前页面样式 -->
     <link rel="stylesheet" href="./css/details.css">
+
 </head>
 <body>
     <!-- 头部 -->
@@ -69,7 +72,43 @@
             <div class="commodity mt12 clearfix">
                 <!-- 左边 -->
                 <div class="cmleft fl">
-
+                    <div class="magnifier" id="magnifier1">
+                        <div class="magnifier-container">
+                            <div class="images-cover"></div>
+                            <!--当前图片显示容器-->
+                            <div class="move-view"></div>
+                            <!--跟随鼠标移动的盒子-->
+                        </div>
+                        <div class="magnifier-assembly">
+                            <div class="magnifier-btn">
+                                <span class="magnifier-btn-left">&lt;</span>
+                                <span class="magnifier-btn-right">&gt;</span>
+                            </div>
+                            <!--按钮组-->
+                            <div class="magnifier-line">
+                                <ul class="clearfix animation03">
+                                    <li>
+                                        <div class="small-img">
+                                            <img src="./imges/书籍/23353342-1_l.jpg" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="small-img">
+                                            <img src="./imges/书籍/22913031-1_l.jpg" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="small-img">
+                                            <img src="./imges/书籍/22935553-1_l.jpg" />
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--缩略图-->
+                        </div>
+                        <div class="magnifier-view"></div>
+                        <!--经过放大的图片显示容器-->
+                    </div>
                 </div>
 
                 <!-- 右边 -->
@@ -103,17 +142,27 @@
                         </div>
                     </div>
                     <!-- 数量选择 -->
-                    <div class="fl pdl16 mt24 slxz">
+                    <div class="fl pdl16 mt24 slxz Quantity">
                        <span class="fs16 c4d4">种类选择：</span>
+                       <button class="but">平装版<span>√</span></button>
+                       <button class="but2">精装版<span class="cur2">√</span></button>
                     </div>
 
                     <!-- 付款 -->
-                    <form action="#" class="fl">
-                        <input type="submit" value="加入购物车">
-                    </form>
-                </div>
+                    <div class="fl pdl16 mt48 jionshop">
+                        <form action="">
+                            <input type="text" value="1" class="fl mt10">
+                            <div class="fl mt10">
+                                <div class="anniu">+</div>
+                                <p class="anniu">-</p>
+                            </div>
+                            <input type="submit" value="加入购物车" class="fr">
+                        </form>
+                        <p class="fl mt16 fs16 c808">温馨提示：支持7天无理由退货</p>
+                    </div>
 
-                <!-- 中间 -->
+                    
+                </div>
                 
             </div>
         </div>
@@ -293,10 +342,7 @@
                         <span class="cf4b">金牌会员</span>&emsp;&emsp;&emsp;&emsp;
                         来自iPhone客户端
                     </p>
-                </div>
-                        `)
-                        
-                    }
+                </div>`)}
                 </script>
 
                 <!-- 换页 -->
@@ -377,8 +423,8 @@
         </p>
     </footer>
 
-
     <script src="./lib/jquery-3.5.1.js"></script>
+    <script src="./lib/magnifier(1).js"></script>
     <script src="./js/details.js"></script>
 </body>
 </html>
