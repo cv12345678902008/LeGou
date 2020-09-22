@@ -113,7 +113,7 @@
 label.error{
     position: absolute;
     left: 145px;
-    top: 44px;
+    top: 38px;
     color: red;
     font-size: 14px;
 }
@@ -127,7 +127,11 @@ label.error{
     color: red;
     font-size: 18px;
 }
-
+.cnm{
+    margin-top: 10px;
+    font-size: 16px;
+    color: red;
+}
 
 
 .footer p:first-child{

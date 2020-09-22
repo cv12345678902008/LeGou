@@ -99,7 +99,7 @@
     font-size: 14px;
     text-indent: 18px;
     color: #1a1a1a;
-    width: 210px;
+    width: 200px;
     border-right: 0;
     z-index: 999;
 }
@@ -120,7 +120,7 @@
     padding-left:38px;
     padding-right:50px;
     display: none;
-    z-index: 1;
+    z-index: 101;
 }
 .box a{
     color: #1a1a1a;
@@ -148,11 +148,20 @@
     height: 28px;
     border-bottom: 1px solid #e6e6e6;
 }
-#banner .bannerleft li p:hover{
+/* #banner .bannerleft li:hover{
+
+} */
+#banner .bannerleft li .pp:hover{
+    width: 200px;
+    background-color: #ffffff;
+    border:1px solid #f60;
     border-right: 0;
+    z-index: 999
+    
 }
 #banner .bannerleft li:hover .box{
     display: block;
+    
 }
 
 /* 今日推荐 */

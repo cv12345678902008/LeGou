@@ -1,54 +1,119 @@
-// 全选全不选
-let check=document.querySelectorAll('.checkBox'); //获取所有多选框
-console.log(check)
-for (let i = 0; i < check.length; i++) {
-    check[0].addEventListener('click',function() {
-       if (check[0].checked==true) {
-           check[i].checked=true
-       }else if(check[0].checked==false){
-        check[i].checked=false
-       }
+$(function(){
+    totalPrice()
+    function totalPrice() {
+        let sum = 0;
+        let money = 0;
+        $('#commodity table .checkBox').each(function () {
+            if ($(this).prop('checked')) {
+                sum += parseInt($(this).parent().siblings('.checkbox').find('.txt').val() )
+                money += parseFloat($(this).parent().siblings('.sum').html()) 
+            }
+        })
+        $('.Total').html(sum);
+        $('.totalprice').html(money.toFixed(2))
+    }
+    // 上面一个全选
+ $('.topCB').click(function () {
+     if ($(this).prop('checked')==true){
+         $('#commodity .checkBox').prop('checked','checked');
+     }else{
+        $('#commodity .checkBox').prop('checked','');
+     }
+     totalPrice()
+ })
+
+    // 下面的全选
+$('.settlement .checkBox').click(function () {
+    console.log(1)
+    if ($(this).prop('checked')==true){
+        $('#commodity .checkBox').prop('checked','checked');
+        $('.topCB').prop('checked','checked')
+    }else{
+        $('#commodity .checkBox').prop('checked','');
+        $('.topCB').prop('checked','')
+
+    }
+    totalPrice()
+})
+
+    //商品列表的input标签选择
+    $('#commodity table .checkBox').click(function () {
+        let flag = true;
+        $('#commodity table .checkBox').each(function(index,dom) {
+            let bool=$(dom).prop('checked')
+            if (!bool) {
+                flag=false;
+            }
+        })
+        $('.topCB').prop('checked',flag)
+        $('.settlement .checkBox').prop('checked',flag)
+        totalPrice()
+
     })
 
-    check[check.length-1].addEventListener('click',function() {
-        if (this.checked==true) {
-            check[i].checked=true
-        }else if(this.checked==false){
-         check[i].checked=false
+    // 给减号添加点击事件
+    $('.reduction').click(function () {
+        let num=$(this).siblings('.txt').val();
+        if (num>1) {
+            --num;
         }
-     })
-}
+        $(this).siblings('.txt').val(num)
 
-// 获取商品数量加减
-let adding=document.querySelectorAll('#commodity .adding')
-let reduction=document.querySelectorAll('#commodity .reduction')
-let txt=document.querySelectorAll('#commodity .txt')
-let price=document.querySelectorAll('#commodity .price')
-let sum=document.querySelectorAll('#commodity .sum')
-let Total_price=document.querySelector('.Total_price')
-for (let i = 0; i < txt.length; i++) {
-    adding[i].addEventListener('click',function() {
-       let num= txt[i].value
-       num++
-       txt[i].value=num;
+        singleTotalPrice(this,num)
+        totalPrice()
 
-       let pr = price[i].innerHTML;
-       let sums=pr*num
-       sum[i].innerHTML=sums
-
-       let a = parseInt(sum[0].innerHTML)+parseInt(sum[1].innerHTML)
-       Total_price.innerHTML=a
     })
-    reduction[i].addEventListener('click',function() {
-        let num= txt[i].value
-        num--;
-        txt[i].value=num;
-        if (num<1) {
-            txt[i].value=1
+
+    // 给加号添加点击事件
+    $('.adding').click(function () {
+        let num=$(this).siblings('.txt').val()
+        ++num;
+        $(this).siblings('.txt').val(num)
+
+        singleTotalPrice(this,num)
+        totalPrice()
+        
+    })
+
+    // input框失去焦点
+    $('#commodity table .txt').blur(function () {
+        //过滤非数字的输入
+        //获取到当前的输入
+        let num =$(this).val();
+        if (isNaN(num)) {
+            $(this).val(1);
             num=1
         }
-        let pr = price[i].innerHTML;
-       let sums=pr*num
-       sum[i].innerHTML=sums
-     })
+        if (num>200) {
+            $(this).val(200);
+            num=200
+        }
+
+        singleTotalPrice(this,num)
+        totalPrice()
+    })
+
+
+//点击删除选中的商品
+$(".remove").click(function () {
+    $(this).parents(".single").remove()
+    totalPrice()
+})
+
+/* 点击选中删除 删除选中的内容的内容 */
+$(".count").click(function () {
+    $("#commodity table .checkBox").each(function () {
+        if ($(this).prop("checked")) {
+            $(this).parents(".single").remove();
+        }
+    })
+    totalPrice()
+})
+
+// 计算小计
+function singleTotalPrice(obj,num) {
+    let unit=$(obj).parent().siblings('.price').html()
+    let money=num*unit;
+    $(obj).parent().siblings('.sum').html(money.toFixed(2))
 }
+})

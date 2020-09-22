@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>乐购·购物车</title>
     <!-- 引入重置样式 -->
     <link rel="stylesheet" href="./css/reset.css" />
     <!-- 引入公共样式 -->
@@ -21,7 +21,9 @@
                 </div>
                 <span>legochina.cn</span>
                 <div class="logintxtbox fr">
-                    欢迎光临<a href="#">乐购</a>，请<a href="#">登录</a>\<a href="#">注册</a>
+                    欢迎光临<a href="./index.html" target="_blank">乐购</a>
+                    ，请<a href="./smSign-in.html" target="_blank" >登录</a>
+                    \<a href="./register.html" target="_blank">注册</a>
                 </div>
             </div>
         </div>
@@ -50,7 +52,7 @@
         <p class="fs20 c666">填写并核对订单信息</p>
         <div class="fs18 c808 title pdl24">
             <form action="#">
-                <input type="checkbox" name="" id="" class="checkBox">
+                <input type="checkbox" name="" id="firstCb" class="topCB">
                 <span>全选</span>
                 <span class="ml184">商品</span>
                 <span class="ml338">单价</span>
@@ -65,7 +67,7 @@
     <section id="commodity" class="mt22 wrapper">
         
         <table>
-            <tr>
+            <tr class="single">
                 <td class="pdl24">
                     <input type="checkbox" name="" id="" class="checkBox">
                 </td>
@@ -76,25 +78,29 @@
                     从你的全世界路过
                 </td>
                 <td class="price">
-                    41.00
+                    41.42
                 </td>
-                <td class="checkbox" class="checkBox">
-                    <span class="fl adding">+</span>
-                    <input type="text" value="1" class="fl txt">
+                <td class="checkbox">
                     <span class="fl reduction" >-</span>
+                    <input type="text" value="1" class="fl txt">
+                    <span class="fl adding">+</span>
                 </td>
                 <td class="sum">
-                    41.00 
+                    41.42 
                 </td>
                 <td>
-                    <span>删除</span>&emsp;&emsp;&emsp;&emsp;
+                    <span class="remove">删除</span>&emsp;&emsp;&emsp;&emsp;
                     移到我的关注
                 </td>
             </tr>
+
+           
+
+            
         </table>
 
         <table>
-            <tr>
+            <tr class="single">
                 <td class="pdl24">
                     <input type="checkbox" name="" id="" class="checkBox">
                 </td>
@@ -105,36 +111,41 @@
                     从你的全世界路过
                 </td>
                 <td class="price">
-                    41.00
+                    41.42
                 </td>
-                <td class="checkbox" class="checkBox">
-                    <span class="fl adding">+</span>
-                    <input type="text" value="1" class="fl txt">
+                <td class="checkbox">
                     <span class="fl reduction" >-</span>
+                    <input type="text" value="1" class="fl txt">
+                    <span class="fl adding">+</span>
                 </td>
                 <td class="sum">
-                    41.00 
+                    41.42 
                 </td>
                 <td>
-                    <span>删除</span>&emsp;&emsp;&emsp;&emsp;
+                    <span class="remove">删除</span>&emsp;&emsp;&emsp;&emsp;
                     移到我的关注
                 </td>
             </tr>
+
+           
+
+            
         </table>
+        
 
         <!-- 结算 -->
         <div class="settlement">
             <div class="fs18 c808 pdl24">
                 <form action="#" class="clearfix">
-                    <input type="checkbox" name="" id="" class="checkBox">
+                    <input type="checkbox" name="" id="lastCb" class="checkBox">
                     <span>全选</span>
-                    <span class="ml80">删除选中商品</span>
+                    <span class="ml80 count">删除选中商品</span>
                     <span class="ml338">
-                        已选择<span class="sopspan mtr ">1</span>件商品
+                        已选择<span class="sopspan mtr Total">0</span>件商品
                     </span>
                     <span class="ml114">
-                        <span class="spspan mr10">总价</span>
-                        <span class="sopspan Total_price">41.00</span>
+                        <span class="spspan mr10 ">总价</span>
+                        <span class="sopspan totalprice">00.00</span>
                     </span>
                     <input type="submit" value="去结算" class="fr">
                 </form>
@@ -142,6 +153,7 @@
         </div>
     </section>
 
+    <!-- 猜你喜欢 -->
     <section id="popularity" class="wrapper mt40">
         <!-- 标题 -->
         <div class="pr-title title">

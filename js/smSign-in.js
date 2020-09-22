@@ -1,14 +1,15 @@
 let ewm=document.querySelector('.ewm'); //二维码图片
 let tel=document.querySelector('.tel'); //二维码提示
+let QR_code=document.querySelector('.QR-code')
 //二维码鼠标移入事件
-ewm.addEventListener('mouseenter',function() {
-    startMove(this, {left:50}, 300, 'linear', function() {
+QR_code.addEventListener('mouseenter',function() {
+    startMove(ewm, {left:50}, 300, 'linear', function() {
         tel.style.display='block'
         startMove(tel,{right:15}, 300, 'linear')
     })
 })
-ewm.addEventListener('mouseleave',function() {
-    startMove(this, {left:108}, 200, 'linear',);
+QR_code.addEventListener('mouseleave',function() {
+    startMove(ewm, {left:108}, 200, 'linear',);
     tel.style.display='none'
 })
 

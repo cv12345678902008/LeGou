@@ -53,9 +53,7 @@ $().ready(function () {
         namecode:{
             required:'请输入手机验证码',
         },
-        cxk:{
-            required:'请同意协议',
-        }
+        
       },
     });
     jQuery.validator.addMethod(
@@ -102,3 +100,24 @@ $().ready(function () {
       
     
   });
+  
+  let sm=document.querySelector('.sm');
+  let ck=document.querySelector('.ck')
+  let cnm=document.querySelector('.cnm')
+  if (ck.checked==false) {
+    sm.disabled=true;
+    sm.style.background='#CCCCCC'
+    cnm.innerHTML='请阅读并勾选这个协议'
+  }
+  ck.addEventListener('click',function() {
+    if (ck.checked==true) {
+      sm.disabled=false;
+      sm.style.background='#f60'
+      cnm.style.display='none'
+    }else if(ck.checked==false){
+      sm.disabled=true;
+      sm.style.background='#CCCCCC'
+      cnm.style.display='block'
+      cnm.innerHTML='请阅读并勾选这个协议'
+    }
+  })
